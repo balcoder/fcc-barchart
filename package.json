@@ -1,12 +1,12 @@
 {
   "name": "npm-babel-prettier",
   "version": "1.0.0",
-  "description": "Some common build tasks written with npm scripts.",
+  "description": "FreeCodeCamp BarChart project using chart.js.",
   "author": "Des Barrett",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/balcoder/npm-babel-prettier"
+    "url": "https://github.com/balcoder/fcc-barchart.git"
   },
   "keywords": [
     "npm",

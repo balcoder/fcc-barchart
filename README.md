@@ -1,16 +1,13 @@
-# npm-build-boilerplate
+# FreeCodeCamp BarChart Project Using Chart.js
 
-A collection of packages that build a website using `npm scripts`.
+Barchart representation of US GDP from 1947-2015 in Billions of Dollars using
+chart.js library
 
-* [List of packages used](#list-of-packages-used)
-* [Using in your project](#using-in-your-project)
-* [List of available tasks](#list-of-available-tasks)
-* [Need help?](#need-help)
 
 ## List of packages used
 [autoprefixer](https://github.com/postcss/autoprefixer), [browser-sync](https://github.com/Browsersync/browser-sync), [eslint](https://github.com/eslint/eslint), [imagemin-cli](https://github.com/imagemin/imagemin-cli), [node-sass](https://github.com/sass/node-sass), [onchange](https://github.com/Qard/onchange), [npm-run-all](https://github.com/mysticatea/npm-run-all), [postcss-cli](https://github.com/code42day/postcss-cli), [svgo](https://github.com/svg/svgo), [svg-sprite-generator](https://github.com/frexy/svg-sprite-generator), [uglify-js](https://github.com/mishoo/UglifyJS2).
 
-Many, many thanks go out to Keith Cirkel for [his post](http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/) and his useful CLI tools!
+
 
 ## Using in your project
 * First, ensure that node.js & npm are both installed. If not, choose your OS and installation method from [this page](https://nodejs.org/en/download/package-manager/) and follow the instructions.
@@ -39,9 +36,9 @@ You're ready to go! Run any task by typing `npm run task` (where "task" is the n
   Compile Scss to CSS
 
 ### `lint`
-  `eslint src/js`
+  `prettier --single-quote --trailing-comma es5 --write dist/js/**/*.js || true`
 
-  "Lint" your JavaScript to enforce a uniform style and find errors
+  "prettier" your JavaScript to enforce a uniform style and find errors
 
 ### `uglify`
   `mkdir -p dist/js && uglifyjs src/js/*.js -m -o dist/js/app.js && uglifyjs src/js/*.js -m -c -o dist/js/app.min.js`
@@ -107,7 +104,3 @@ You're ready to go! Run any task by typing `npm run task` (where "task" is the n
   `npm run build:all && npm run watch:all`
 
   Runs `watch:all` after `npm install` is finished
-
-
-## Need help?
-Feel free to [create an issue](http://github.com/damonbauer/npm-build-boilerplate/issues), [tweet me](http://twitter.com/damon_bauer), or [send me an email](mailto:hello@damonbauer.me). I'd be glad to help where I can!
