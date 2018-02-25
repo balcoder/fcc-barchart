@@ -67,7 +67,9 @@ function getData(url, callback) {
           yAxes: [{
             scaleLabel: {
               display: true,
-              labelString: 'GDP in Billions of Dollars'
+              labelString: 'GDP in Billions of Dollars',
+              fontColor: 'black',
+              fontStyle: 'bold'
             },
             ticks: {
               beginAtZero: true
