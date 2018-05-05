@@ -20,13 +20,13 @@ function getData(url, callback) {
   xmlhttp.onreadystatechange = function() {
     if(this.readyState == 4 && this.status == 200) {
       try {
-        // store data in myDataObject variable
-      var myDataObject = JSON.parse(this.responseText);
-        } catch(error) {
+          // store data in myDataObject variable
+          var myDataObject = JSON.parse(this.responseText);
+          } catch(error) {
           console.log(error.msg + " in " + xmlhttp.responseText);
           return
-        }
-        // do something with the data
+          }
+      // do something with the data
       callback(myDataObject);
     }
   }
